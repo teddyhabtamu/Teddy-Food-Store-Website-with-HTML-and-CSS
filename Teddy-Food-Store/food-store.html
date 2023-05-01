@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="Favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teddy food store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: rgb(220, 255, 253);
+    }
+    p,div,button{
+      font-family: roboto,arial;
+      cursor: pointer;
+    }
+    
+    .header{
+      background-color: rgb(187, 255, 0);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      /* border: none;
+      border-top: 2px;
+      border-style: ridge; */
+      margin-bottom: 20px;
+      padding-right: 20px;
+      border-radius: 10px;
+
+    
+
+    }
+    .header-right{
+      display: flex;
+      justify-content: right;
+      width: 100%;
+      column-gap: 50px;
+    }
+
+    .home, .about-me, .recipe, .recipies, .food{
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+    .home:hover, 
+    .about-me:hover, 
+    .recipe:hover, 
+    .recipies:hover, 
+    .food:hover{
+      background-color: rgb(194, 254, 155);
+      transition: 0.5s;
+    }
+    .name{
+      display: flex;
+      width: 100%;
+      font-size: 35px;
+      
+    }
+    .social-media{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      background-color: rgb(255, 255, 52);
+      margin-bottom: 20px;
+      /* background-image: url("food.jpg"); */
+      padding-left: 10px;
+      padding-right: 10px;
+      border: none;
+      border-top: 2px;
+      border-style: ridge;
+    }
+    .social-media img{
+      width: 60px;
+      
+    }
+    .social-media p{
+      font-weight: bold;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      margin: 0;
+    }
+
+    .catagories{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    .catagories img{
+      width: 100%;
+      height: 60%;
+      border-radius: 15px;
+    }
+    .catagories img:hover{
+      filter: blur(2px);
+    }
+    .catagories button{
+      background-color: yellow;
+      border: none;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 18px;
+      border-radius: 30px;
+      transition: 0.5s;
+    }
+
+    .catagories button:hover{
+      background-color: rgb(110, 255, 70);
+      transition: 0.5s;
+    }
+    .catagories p{
+      font-weight: bold;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="name">
+        <p style="
+          display: inline-block;
+          padding-right: 15px;
+          font-weight: bold; 
+          font-family: lobster;
+          color: rgb(111, 0, 255);">
+         Teddy
+        </p>
+         <p style="
+          display: inline-block;
+          font-family: lobster;">
+         Food-Store
+        </p>
+      </div>
+      <div class="header-right">
+        <div class="home">
+          Home
+        </div>
+        <div class="about-me">
+          About
+        </div>
+        <div class="recipe">
+          Recipe
+        </div>
+        <div class="recipies">
+          Recipies
+        </div>
+        <div class="food">
+          Foods
+        </div>
+      </div>
+      
+    </div>
+    <!-- <div class="social-media">
+      <div>
+        <img src="youtube.png" alt="">
+        <p style="display: inline-block;"> 1M Subscribers</p>
+        <p>YouTube</p>
+      </div>
+      <div >
+        <img src="instagram.png" alt="">
+        <p style="display: inline-block;"> 600k Followers</p>
+        <p>Instagram</p>
+      </div>
+      <div >
+        <img src="facebook.png" alt="">
+        <p style="display: inline-block;"> 860k Followers</p>
+        <p>Facebook</p>
+      </div>
+    </div> -->
+    <div style="display: flex; 
+      justify-content: center; 
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 10px;">Popular Foods
+    </div>
+    <div>
+      <div class="catagories">
+        <div class="burger">
+          <a href="https://www.burgerking.nl/menu">
+            <img src="burger.jpeg" alt="">
+          </a>
+          <div >
+            <p>Burger____________Price 20$</p>
+
+            <a href="https://www.thuisbezorgd.nl/burger-bestellen?gclid=b30847d6c4b113a20148239953967668&gclsrc=3p.ds&msclkid=b30847d6c4b113a20148239953967668&utm_source=bing&utm_medium=cpc&utm_campaign=CM_S_B_NLD_NL_%5BFTKT%5D_%5BENGM%5D_Burger_National&utm_term=burger&utm_content=S_NLD_NL_%5BFTKT%5D_Burger_ROOT">
+              <button>Order now</button>
+            </a>
+            
+          </div>
+        </div>
+        <div class="donut">
+          <a href="https://www.jjdonuts.nl">
+            <img src="donut.jpeg" alt="">
+          </a>
+          <div >
+            <p>Donut____________Price 18$</p>
+
+            <a href="https://www.thuisbezorgd.nl/dunkin-donuts?gclid=2af3c82da0b914bc8f13ac6238b4de5e&gclsrc=3p.ds&msclkid=2af3c82da0b914bc8f13ac6238b4de5e&utm_source=bing&utm_medium=cpc&utm_campaign=CM_S_B_NLD_NL_%5BGEN%5D_%5BENGM%5D_DSA&utm_term=thuisbezorgd&utm_content=S_NLD_NL_%5BGEN%5D%20DSA%20-%20All%20Pages">
+              <button>Order now</button>
+            </a>
+          </div>
+        </div>
+        <div class="hotdog">
+          <a href="https://www.24kitchen.nl/populair/kookboek-van-de-maand">
+            <img src="hot-dog.jpeg" alt="">
+          </a>
+          <div >
+            <p>Hot Dog____________Price 16$</p>
+            <a href="https://www.thuisbezorgd.nl/en/order-hot-dog">
+              <button>Order now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="catagories">
+        <div class="burger">
+          <img src="pizza.jpeg" alt="">
+          <div >
+            <p>Pizza____________Price 20$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+        <div class="donut">
+          <img src="cake.jpeg" alt="">
+          <div >
+            <p>Cake____________Price 18$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+        <div class="hotdog">
+          <img src="meat.jpg" alt="">
+          <div >
+            <p>Meat-Stack____________Price 16$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="catagories">
+        <div class="burger">
+          <img src="single-burger.jpeg" alt="">
+          <div >
+            <p>single-Burger____________Price 20$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+        <div class="donut">
+          <img src="fish.jpeg" alt="">
+          <div >
+            <p>Fish-stack____________Price 18$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+        <div class="hotdog">
+          <img src="hot-dog.jpeg" alt="">
+          <div >
+            <p>Hot Dog____________Price 16$</p>
+            <button>Order now</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+  </div>
+</body>
+</html>
